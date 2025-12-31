@@ -19,3 +19,4 @@ View your app in AI Studio: https://ai.studio/apps/drive/10im8BCltzlDYmCjRuw5-1m
 3. Run the app:
    `npm run dev`
 # photography
+# photography
