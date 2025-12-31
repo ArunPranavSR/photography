@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const CaseStudies: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ export const CaseStudies: React.FC = () => {
       {/* Header */}
       <div className="mb-4 lg:mb-6 shrink-0">
         <h2 className="text-3xl md:text-5xl font-normal tracking-tight text-[#d3cfcc]">
-          Kōsuke's Photography
+          Kenjo's Photography
         </h2>
       </div>
 
@@ -30,12 +31,12 @@ export const CaseStudies: React.FC = () => {
              </h3>
              
              <p className="text-sm text-neutral-400 leading-relaxed max-w-sm">
-               Enter the bustling world of Tokyo's train stations through Kōsuke Nakamura's lens as he captures the captivating essence of people navigating the vibrant cityscape. In this series, Kōsuke delves into the unique rhythm and energy found within the heart of Tokyo's bustling transportation hubs.
+               Enter the bustling world of Tokyo's train stations through Kenjo Sato's lens as he captures the captivating essence of people navigating the vibrant cityscape. In this series, Kenjo delves into the unique rhythm and energy found within the heart of Tokyo's bustling transportation hubs.
              </p>
 
-             <button className="mt-1 px-8 py-3 rounded-full bg-[#d3cfcc] text-[#1a1a1a] text-sm font-semibold hover:bg-white hover:scale-105 transition-all duration-300">
+             <Link to="/work/0" className="mt-1 px-8 py-3 rounded-full bg-[#d3cfcc] text-[#1a1a1a] text-sm font-semibold hover:bg-white hover:scale-105 transition-all duration-300 no-underline">
                View case study
-             </button>
+             </Link>
           </div>
 
           {/* Bottom Image (Random) */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen } from 'lucide-react';
 
 export const Journal: React.FC = () => {
@@ -45,7 +46,7 @@ export const Journal: React.FC = () => {
 
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 min-h-0 overflow-y-auto custom-scrollbar pb-4">
         {articles.map((article, idx) => (
-          <div key={idx} className="group flex flex-col gap-4 cursor-pointer">
+          <Link to={`/journal/${idx}`} key={idx} className="group flex flex-col gap-4 cursor-pointer no-underline">
              <div className="w-full aspect-[4/3] overflow-hidden rounded-[1.5rem] relative">
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10" />
                 <img 
@@ -63,7 +64,7 @@ export const Journal: React.FC = () => {
                   <span>{article.date}</span>
                   <span className="w-8 h-[1px] bg-neutral-700"></span>
                </div>
-               <h3 className="text-xl md:text-2xl font-bold group-hover:text-white transition-colors">{article.title}</h3>
+               <h3 className="text-xl md:text-2xl font-bold text-inherit group-hover:text-white transition-colors">{article.title}</h3>
                <p className="text-sm text-neutral-400 leading-relaxed">
                  {article.excerpt}
                </p>
@@ -71,7 +72,7 @@ export const Journal: React.FC = () => {
                   Read Article <ArrowRight className="w-3 h-3" />
                </div>
              </div>
-          </div>
+          </Link>
         ))}
       </div>
       

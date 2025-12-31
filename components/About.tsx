@@ -74,8 +74,8 @@ export const About: React.FC = () => {
         <div className="lg:col-span-5 h-[30vh] lg:h-full relative group shrink-0 transition-all duration-1000 ease-out hover:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.15)] rounded-[2.5rem]">
           <div className="w-full h-full overflow-hidden rounded-[2.5rem]">
             <img 
-              src="https://picsum.photos/1000/1500?grayscale&random=50" 
-              alt="Kōsuke Nakamura Profile" 
+              src="https://images.unsplash.com/photo-1556103255-4443dbae8e5a?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              alt="Kenjo Sato Profile" 
               className="w-full h-full object-cover grayscale contrast-110 group-hover:scale-105 transition-transform duration-1000 ease-out"
             />
           </div>
@@ -98,7 +98,7 @@ export const About: React.FC = () => {
             
             <div className="space-y-4 text-sm md:text-base leading-relaxed text-neutral-800/90 font-medium mb-8">
               <p className="relative group/bio inline cursor-default transition-colors duration-500 hover:text-black">
-                With over a decade of experience navigating the hidden corners of Tokyo and the vast landscapes of Hokkaido, Kōsuke Nakamura has established a signature style that balances raw honesty with ethereal beauty.
+                With over a decade of experience navigating the hidden corners of Tokyo and the vast landscapes of Hokkaido, Kenjo Sato has established a signature style that balances raw honesty with ethereal beauty.
                 <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-black/20 transition-all duration-500 group-hover/bio:w-full"></span>
               </p>
             </div>
@@ -119,7 +119,7 @@ export const About: React.FC = () => {
               
               <div className="flex flex-col group/email cursor-pointer">
                 <span className="text-[9px] font-bold uppercase tracking-widest text-neutral-500 transition-colors group-hover/email:text-black">Direct Contact</span>
-                <span className="text-base font-bold border-b border-black leading-tight transition-all group-hover/email:border-b-2">hello@nakamura.co</span>
+                <span className="text-base font-bold border-b border-black leading-tight transition-all group-hover/email:border-b-2">hello@sato.co</span>
               </div>
             </div>
 
@@ -200,12 +200,6 @@ export const About: React.FC = () => {
             </form>
           </div>
         </div>
-      </div>
-
-      {/* Footer Branding */}
-      <div className="mt-8 pt-4 border-t border-black/5 flex justify-between items-center opacity-30 shrink-0">
-        <p className="text-[9px] font-bold tracking-widest uppercase">© 2024 Kōsuke Nakamura Studio</p>
-        <p className="text-[9px] font-bold tracking-widest uppercase">Crafting Visual Legacies</p>
       </div>
     </section>
   );

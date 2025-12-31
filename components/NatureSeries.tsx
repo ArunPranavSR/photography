@@ -78,7 +78,7 @@ export const NatureSeries: React.FC = () => {
            
            {/* Description */}
            <p className="text-sm md:text-base text-neutral-400 leading-relaxed mb-8 max-w-md">
-             Step into the mesmerizing world of Kōsuke Nakamura's nature series, where the beauty of the natural world unfolds in breathtaking detail. Through his lens, Kōsuke captures the harmony and grandeur of Earth's landscapes, from vast mountain ranges to delicate flower petals.
+             Step into the mesmerizing world of Kenjo Sato's nature series, where the beauty of the natural world unfolds in breathtaking detail. Through his lens, Kenjo captures the harmony and grandeur of Earth's landscapes, from vast mountain ranges to delicate flower petals.
            </p>
 
            {/* Button */}
