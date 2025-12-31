@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowUpRight, Trophy, Star, Medal } from 'lucide-react';
 
 export const Exhibitions: React.FC = () => {
@@ -24,7 +25,7 @@ export const Exhibitions: React.FC = () => {
         {/* Exhibition List */}
         <div className="flex flex-col mb-12">
           {exhibitions.map((item, index) => (
-            <div key={index} className="group flex flex-col md:flex-row md:items-center border-b border-black/10 py-6 md:py-8 hover:bg-white/40 transition-colors px-4 rounded-xl cursor-pointer">
+            <Link key={index} to={`/work/${index}`} className="group flex flex-col md:flex-row md:items-center border-b border-black/10 py-6 md:py-8 hover:bg-white/40 transition-colors px-4 rounded-xl cursor-pointer no-underline text-inherit">
               <div className="w-24 text-sm font-bold text-neutral-500 mb-2 md:mb-0">{item.year}</div>
               <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                 <h3 className="text-xl md:text-3xl font-medium tracking-tight group-hover:translate-x-2 transition-transform duration-300">
@@ -40,7 +41,7 @@ export const Exhibitions: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         
